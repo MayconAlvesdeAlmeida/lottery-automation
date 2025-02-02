@@ -1,0 +1,4 @@
+{
+    "url_app": "http://localhost:3000/lottery/home",
+    "url_lotofacil" : "https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=aplicativos#/lotofacil/especial"
+}

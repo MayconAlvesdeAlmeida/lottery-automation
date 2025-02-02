@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:4.4
+    container_name: mongo
+    volumes:
+     - ./mongo:/data/db
+    ports:
+      - 27017:27017
+
+  api:
+    build: .
+    container_name: api
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo
+    volumes:
+      - ./src:/app/src
+      - ./.env:/app/.env
+
