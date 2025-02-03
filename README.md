@@ -14,6 +14,7 @@ O projeto foi dividido em dois ambientes: Linux e Windows.
 Caso opte por rodar o script de automação em Linux, será necessário utilizar um driver do Selenium compatível com o sistema. 
 No exemplo do projeto, utilizo o driver do Selenium para o Firefox.
 
+
 ## Arquitetura do Projeto
 
 O sistema é dividido em três principais componentes:
@@ -40,6 +41,7 @@ Fluxo de funcionamento:
 
 7. Assim que a tag é detectada, o script Python acessa o site da Caixa Econômica e inicia o processo de registro das apostas automaticamente.
 
+
 ## Tecnologias Utilizadas
 
 - Backend: Node.js, MongoDB
@@ -48,10 +50,15 @@ Fluxo de funcionamento:
 
 - Automatização: Python, Selenium
 
+
 ## Requisitos
 
 - **Docker** e **docker-compose** instalado e em execução (Linux).
 - **Python** versão 3.8 ou superior configurado no ambiente (Windows).
+- **Navegador Firefox** instalado (Windows).
+
+>Nesse projeto, utilizei o Firefox como navegador<br>
+>Estou disponibilizando o geckodriver do Firefox
 
 ## Download do projeto:
 
@@ -90,6 +97,7 @@ Fluxo de funcionamento:
     docker compose ps
     ```
 
+
 ## Configurando a automação
 
 1. Utilizando o cmd, acesse a pasta automation
@@ -117,11 +125,12 @@ Fluxo de funcionamento:
     python start_app.py
     ```
 
+
 ## Criando as apostas
 
 O Selenium irá acessar a página inicial do **frontend**
 
-![Image](https://github.com/user-attachments/assets/73d899e2-1164-46f2-9a21-6246e5c12d4d)
+![Image](https://github.com/user-attachments/assets/7f54b3bb-0b2c-4a52-87a4-712e102aed31)
 
 >Devido ser o seu primeiro acesso, o banco de dados está sem registro.
 >Por esse motivo não é possível fazer uma busca por um concurso de refêrencia.
@@ -130,13 +139,13 @@ O Selenium irá acessar a página inicial do **frontend**
 
     Adicione o Nome do Apostador e escolhe 15 números.
 
-    ![Image](https://github.com/user-attachments/assets/ddb4f267-a243-4962-8c62-c2fa8c19616c)
+    ![Image](https://github.com/user-attachments/assets/43fbb4b6-7589-4fe8-a1a1-3743f3700788)
 
     Adicione quantos apostadores quiser.
 
 2. Preencha o formulário do **Novo Concurso** informando número e data.
 
-    ![Image](https://github.com/user-attachments/assets/49a060d7-a6b9-492f-be2f-475dd2f927bc)
+    ![Image](https://github.com/user-attachments/assets/84c47f64-e905-4a3f-b560-9f25048cc65f)
 
 3. Confirme os dados e clique em **Confirmar**
 
@@ -145,6 +154,7 @@ O Selenium irá acessar a página inicial do **frontend**
 5. Agora basta logar em sua conta e pagar as apostas.
 
 6. Para finalizar, acesse o cmd e pressione qualquer tecla.
+
 
 ## Contato
 
