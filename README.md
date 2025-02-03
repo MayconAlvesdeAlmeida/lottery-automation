@@ -117,6 +117,35 @@ Fluxo de funcionamento:
     python start_app.py
     ```
 
+## Criando as apostas
 
+O Selenium irá acessar a página inicial do **frontend**
 
+![Image](https://github.com/user-attachments/assets/73d899e2-1164-46f2-9a21-6246e5c12d4d)
 
+>Devido ser o seu primeiro acesso, o banco de dados está sem registro.
+>Por esse motivo não é possível fazer uma busca por um concurso de refêrencia.
+
+1. Clique no botão de **Adicionar Apostas**
+
+    Adicione o Nome do Apostador e escolhe 15 números.
+
+    ![Image](https://github.com/user-attachments/assets/ddb4f267-a243-4962-8c62-c2fa8c19616c)
+
+    Adicione quantos apostadores quiser.
+
+2. Preencha o formulário do **Novo Concurso** informando número e data.
+
+    ![Image](https://github.com/user-attachments/assets/49a060d7-a6b9-492f-be2f-475dd2f927bc)
+
+3. Confirme os dados e clique em **Confirmar**
+
+4. A automação irá inserir suas apostas no site da Caixa
+
+5. Agora basta logar em sua conta e pagar as apostas.
+
+6. Para finalizar, acesse o cmd e pressione qualquer tecla.
+
+## Contato
+
+Criado por Maycon Almeida. Entre em contato para dúvidas e sugestões.
